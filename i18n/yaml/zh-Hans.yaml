@@ -1,0 +1,41 @@
+# 通用
+# 標點符號
+- comma:
+    other: ，
+- period:
+    other: 。
+# 失敗與成功
+- success:
+    other: 成功
+- failed:
+    other: 失败
+- reason:
+    other: 原因为 {{ .error }}
+
+## 方法
+- get:
+    other: 取得{{ .data }}
+- create:
+    other: 建立{{ .data }}
+- update:
+    other: 更新{{ .data }}
+- modify:
+    other: 修正{{ .data }}
+- delete:
+    other: 删除{{ .data }}
+- append:
+    other: 加入{{ .object }}到{{ .data }}
+- remove:
+    other: 从{{ .data }}移除{{ .object }}
+## 錯誤訊息
+- errMsg.parameter.int:
+    other: 传入的 id `{{ .data }}` 必须为整数，请重新检查 id `{{ .data }}` 是否为整数。
+- errMsg.parameter.format:
+    other: 错误的参数格式，请重新检查传入的参数是否正确。
+- errMsg.parameter.required:
+    other: 参数 `{{ .data }}` 为必要参数，请重新检查传入的参数是否遗漏。
+
+# 客製化模組
+## user
+- module.user:
+    other: 使用者

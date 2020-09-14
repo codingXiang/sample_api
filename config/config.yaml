@@ -1,0 +1,19 @@
+application:
+  timeout:
+    read: 1000
+    write: 1000
+  port: 8888
+  uploadPath: "./upload"
+  mode: "debug"
+  appId: "ops"
+  apiBaseRoute: "/api"
+i18n:
+  defaultLanguage: "zh-Hant"
+  file:
+    path: "./i18n"
+    type: "yaml"
+log:
+  level: "info"
+  format: "json"
+  path: "log"
+  filename: "user.log"

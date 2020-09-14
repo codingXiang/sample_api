@@ -1,0 +1,41 @@
+# 通用
+# 標點符號
+- comma:
+    other: ","
+- period:
+    other: "."
+# 失敗與成功
+- success:
+    other: success
+- failed:
+    other: failed
+- reason:
+    other: because {{ .error }}
+
+## 方法
+- get:
+    other: Get {{ .data }}
+- create:
+    other: Create {{ .data }}
+- update:
+    other: Update {{ .data }}
+- modify:
+    other: Modify {{ .data }}
+- delete:
+    other: Delete {{ .data }}
+- append:
+    other: Append {{ .object }} to {{ .data }}
+- remove:
+    other: Remove {{ .object }} from {{ .target }}
+## 錯誤訊息
+- errMsg.parameter.int:
+    other: id `{{ .data }}` must be integer，please recheck id `{{ .data }}` format is integer.
+- errMsg.parameter.format:
+    other: error parameter format, please recheck body format.
+- errMsg.parameter.required:
+    other: parameter `{{ .data }}` is required.
+
+# 客製化模組
+## user
+- module.user:
+    other: user

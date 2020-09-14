@@ -1,0 +1,13 @@
+database:
+  url: '127.0.0.1'
+  port: 3306
+  name: 'sample'
+  username: 'sample'
+  password: 'sample'
+  type: 'mysql'
+  tablePrefix: ""
+  maxOpenConns: 1000
+  maxIdleConns: 1000
+  maxLifeTime: 5
+  logMode: true
+  version: "0.0.1"
